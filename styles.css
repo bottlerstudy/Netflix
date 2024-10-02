@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #111;
+}
+
+.logo {
+    padding-left: 1rem;
+    height: 45px;
+    width: 90px;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.nav-bar {
+    background-color: #111;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav-bar ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav-bar li {
+    list-style: none;
+    padding: 1rem;
+}
+
+.nav-bar li a {
+    padding: 2px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-bar li a:hover {
+    color: gray;
+}
+
+.banner {
+    background-image: url('main-img/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 448px;
+    color: white;
+}
+
+
+.banner-content {
+    margin-left: 30px;
+    padding-top: 190px;
+    height: 190px;
+}
+
+.banner-title {
+    font-size: 3rem;
+    font-weight: 800;
+    padding-bottom: 0.3rem;
+}
+
+.banner-btn button {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 80px;
+    height: 30px;
+    border: 1px solid transparent;
+    border-radius: 2px;
+}
+
+.banner-btn button:hover {
+    background-color: rgb(171, 163, 163);
+    cursor: pointer;
+}
+
+.banner-discription {
+    line-height: 1.5;
+    padding-top: 0.5rem;
+    font-size: 1rem;
+}
+
+.container {
+    color: white;
+}
+
+.title {
+    margin-top: 20px;
+    margin-left: 25px;
+    font: 800 1.2rem "Fira Sans";
+}
+
+.contents-list {
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 25px;
+}
+
+.contents-list::-webkit-scrollbar {
+    display: none;
+}
+
+.content-item {
+    width: 100%;
+    object-fit: contain;
+    margin-right: 20px;
+    transition: transform 450ms;
+}
+
+.large {
+    max-height: 250px;
+}
+
+.small {
+    max-height: 150px;
+}
+.content-item:hover {
+    transform: scale(1.1);
+}
